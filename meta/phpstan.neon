@@ -1,0 +1,9 @@
+parameters:
+	level: 7
+	paths:
+		- ../libraries
+		- ../public
+		- ../routes
+		- ../tests
+	ignoreErrors:
+		- '#.*is never read, only written#'

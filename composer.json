@@ -1,0 +1,20 @@
+{
+    "scripts": {
+        "tests": "php ./tests/run.php",
+        "lint": "./vendor/bin/pint libraries public routes tests --preset psr12",
+        "types": "./vendor/bin/phpstan analyse --configuration meta/phpstan.neon"
+    },
+    "autoload": {
+        "files": ["libraries/dependencies/publish.php"]
+    },
+    "require": {
+        "ext-mbstring": "*",
+        "ext-curl": "*",
+        "ext-ctype": "*"
+    },
+    "require-dev": {
+        "ext-xdebug": "*",
+        "laravel/pint": "^1.18",
+        "phpstan/phpstan": "^2.0"
+    }
+}
